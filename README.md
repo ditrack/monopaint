@@ -19,13 +19,19 @@ Edit the file `config/db.php` with real data, for example:
 ```php
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
+    'dsn' => 'mysql:host=localhost;dbname=monopaint',
     'username' => 'root',
     'password' => '1234',
     'charset' => 'utf8',
 ];
 ```
 
-**NOTE:** Yii won't create the database for you, this has to be done manually before you can access it.
+**NOTE:** Create database with name that write after `dbname=`
 
-Also check and edit the other files in the `config/` directory to customize your application.
+### Install
+
+1.Install dependency via composer
+`composer install`
+
+2. php yii migrate/up --migrationPath=@app/modules/monopaint/migrations
+3. php yii picture/init

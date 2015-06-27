@@ -12,6 +12,9 @@ return [
     'controllerNamespace' => 'app\commands',
     'modules' => [
         'gii' => 'yii\gii\Module',
+        'monopaint' => [
+            'class' => 'app\modules\monopaint\Module',
+        ],
     ],
     'components' => [
         'cache' => [
