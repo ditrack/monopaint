@@ -7,6 +7,7 @@ class m150627_095943_picture extends Migration
 {
     protected $table = '{{picture}}';
 
+    /** @inheritdoc */
     public function up()
     {
         $this->createTable($this->table, [
@@ -17,6 +18,7 @@ class m150627_095943_picture extends Migration
         ]);
     }
 
+    /** @inheritdoc */
     public function down()
     {
         $this->dropTable($this->table);

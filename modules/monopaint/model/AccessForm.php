@@ -21,6 +21,7 @@ class AccessForm extends Model
             [['id', 'password'], 'required'],
             [['id'], 'integer'],
             ['password', 'validatePassword'],
+            [['password'], 'string', 'min' => 6, 'max' => 60],
         ];
     }
 
@@ -36,7 +37,7 @@ class AccessForm extends Model
         if (!$this->hasErrors()) {
             $picture = $this->getPicture();
             if (!$picture || !$picture->validatePassword($this->password)) {
-                $this->addError($attribute, 'Incorrect username or password.');
+                $this->addError($attribute, 'Incorrect password.');
             }
         }
     }

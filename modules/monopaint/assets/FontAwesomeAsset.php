@@ -12,16 +12,15 @@ use \yii\web\AssetBundle;
 
 class FontAwesomeAsset extends AssetBundle
 {
+    /** @inheritdoc */
     public $sourcePath = '@bower/font-awesome';
 
+    /** @inheritdoc */
     public $css = [
         'css/font-awesome.min.css',
     ];
-    /**
-     * Initializes the bundle.
-     * Set publish options to copy only necessary files (in this case css and font folders)
-     * @codeCoverageIgnore
-     */
+
+    /** @inheritdoc */
     public function init()
     {
         parent::init();

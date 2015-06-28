@@ -9,7 +9,7 @@ $this->title = 'Start page';
 
         <p class="lead">You have successfully start application.</p>
 
-        <p><a class="btn btn-lg btn-success" href="<?= \yii\helpers\Url::to(['monopaint/picture']); ?>">Go to module</a></p>
+        <p><a class="btn btn-lg btn-success" href="<?= \yii\helpers\Url::to(['monopaint/picture/index']); ?>">Go to module</a></p>
     </div>
 
 </div>

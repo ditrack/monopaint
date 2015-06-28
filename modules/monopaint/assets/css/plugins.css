@@ -68,3 +68,4 @@
 .pading-bottom-5 {
     padding-bottom: 5px !important;
 }
+#imageTemp { position: absolute; top: 1px; left: 16px; }

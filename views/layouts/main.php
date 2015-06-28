@@ -36,7 +36,7 @@ AppAsset::register($this);
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
                     ['label' => 'Home', 'url' => ['/site/index']],
-                    ['label' => 'Pictures List', 'url' => ['/monopaint/picture']],
+                    ['label' => 'Pictures List', 'url' => ['/monopaint/picture/index']],
                     ['label' => 'Draw your own picture', 'url' => ['/monopaint/picture/create']],
 
                 ],

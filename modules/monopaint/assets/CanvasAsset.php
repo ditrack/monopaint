@@ -4,7 +4,7 @@ namespace app\modules\monopaint\assets;
 
 use yii\web\AssetBundle;
 
-class ModuleAsset extends AssetBundle
+class CanvasAsset extends AssetBundle
 {
     /** @inheritdoc */
     public $css = [
@@ -13,7 +13,7 @@ class ModuleAsset extends AssetBundle
 
     /** @inheritdoc */
     public $js = [
-        'js/fancy-box.js',
+        'js/draw.js',
         'js/modal.js',
     ];
 
@@ -21,7 +21,6 @@ class ModuleAsset extends AssetBundle
     public $depends = [
         'yii\bootstrap\BootstrapAsset',
         'app\modules\monopaint\assets\FancyBoxAsset',
-        'app\modules\monopaint\assets\FontAwesomeAsset',
     ];
 
     /** @inheritdoc */
@@ -30,4 +29,4 @@ class ModuleAsset extends AssetBundle
         $this->sourcePath = __DIR__ ;
         parent::init();
     }
-}
+} 
