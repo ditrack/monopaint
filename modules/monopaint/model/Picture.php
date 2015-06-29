@@ -115,6 +115,10 @@ class Picture extends ActiveRecord
     {
         $data = $this->data;
 
+        if (!$data) {
+            return true;
+        }
+
         list($type, $data) = explode(';', $data);
         list(, $data)      = explode(',', $data);
         $data = base64_decode($data);

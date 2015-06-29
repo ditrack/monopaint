@@ -132,7 +132,7 @@
                 var img = new Image();
 
                 img.onload = function () {
-                    context.drawImage(img, 10, 10);
+                    contexto.drawImage(img, 10, 10);
                 };
 
                 img.src = picture.value;
