@@ -130,20 +130,4 @@ class PictureController extends Controller
         }
     }
 
-    protected function checkAccess()
-    {
-        $access = new AccessForm();
-
-        if ($access->load(\Yii::$app->request->post()) && $access->validate()) {
-            return $this->redirect(['index']);
-        }elseif (Yii::$app->request->isAjax) {
-            return $this->renderAjax('_access_form', [
-                'model' => $access
-            ]);
-        } else {
-            return $this->render('_access_form', [
-                'model' => $access
-            ]);
-        }
-    }
 }

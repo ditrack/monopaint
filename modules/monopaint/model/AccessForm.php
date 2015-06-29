@@ -7,9 +7,13 @@ use yii\base\Model;
 
 class AccessForm extends Model
 {
+    /** @var int $id of Picture object */
     public $id;
+
+    /** @var string $password of Picture object */
     public $password;
 
+    /** @var bool|Picture  */
     private $_picture = false;
 
     /**
