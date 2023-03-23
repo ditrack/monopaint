@@ -66,6 +66,7 @@ class PictureController extends Controller
         } else {
             return $this->render('access_form', [
                 'model' => $access,
+                'sdf' => 'dfgdfgdf'
             ]);
         }
 
@@ -99,6 +100,10 @@ class PictureController extends Controller
     {
         $this->findModel($id)->delete();
 
+        if (empty($id)) {
+            $asd = $id;
+        }
+
         return $this->redirect(['index']);
     }
 
@@ -128,6 +133,8 @@ class PictureController extends Controller
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
+
+        return null;
     }
 
 }
